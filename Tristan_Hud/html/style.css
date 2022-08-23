@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+* {
+  font-size: 0.9vw;
+  transition: .5s;
+}
+
+.menu {
+  top: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 10%;
+  position: absolute;
+}
+
+.container img {
+  width: 5vw;
+  height: 5vw;
+  position: absolute;
+  right: 1vw;
+}
+
+.iconcontainer {
+  background-color: rgb(0, 0, 0);
+  width: fit-content;
+  height: fit-content;
+  display: inline-block;
+  padding: 0.3vw;
+  border-radius: 0.2vw;
+  -webkit-box-shadow: 0.2vw 0.2vw 0.8vw 0.2vw rgba(0, 0, 0, 0.35);
+  box-shadow: 0.2vw 0.2vw 0.8vw 0.2vw rgba(0, 0, 0, 0.35);
+  margin: 0.2vw;
+  position: relative;
+}
+
+.botones {
+  position: relative;
+  display: inline-block;
+  left: 2vw;
+  top: 1vw;
+}
+
+.iconcontainer i {
+  color: white;
+}
+
+.iconcontainer span {
+  font-family: "Poppins";
+  font-size: 0.7vw;
+}
+
+.menuhud {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
+  background-color: black;
+  height: 14vw;
+  width: 30vw;
+  -webkit-box-shadow: 0.2vw 0.2vw 0.8vw 0.2vw rgba(0, 0, 0, 0.35);
+  box-shadow: 0.2vw 0.2vw 0.8vw 0.2vw rgba(0, 0, 0, 0.35);
+  border-radius: 0.5vw;
+}
+
+.leftside {
+  position: absolute;
+  width: 100%;
+  height: 82.8%;
+  left: 3%;
+}
+
+
+.menuhud h1 {
+  color: white;
+  font-family: "Poppins";
+  font-size: 1.2vw;
+  text-align: center;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000;
+
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.5vw;
+  width: 1.5vw;
+  left: 0.3vw;
+  bottom: 0.3vw;
+  background-color: #ffffff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #ffffff;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #000000;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+  background-color: #000000;
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 2vw;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 3.5vw;
+  height: 2vw;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.checks {
+  width: fit-content;
+  height: fit-content;
+  display: inline-block;
+  padding: 0.3vw;
+  border-radius: 0.2vw;
+  margin: 0.2vw;
+  transition: .5s;
+}
+
+.checks h1 {
+  font-size: 0.9vw;
+}
+
+.iconcontainer:hover {
+  cursor: pointer;
+}
+
+button[type=submit]:hover {
+  cursor: pointer;
+}
+
+button[type=submit] {
+  background-color: #262626;
+  border-style: none;
+  padding: .5vw;
+  color: white;
+  font-family: "Poppins";
+  font-size: .9vw;
+  border-radius: .5vw;
+}
